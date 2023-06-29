@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rutas para moteros, la mejor pagina para planear tus viajes en moto">
+    <meta name="keywords" content="Motoviajero, viajes, moto, ruta, motoposadas, colombia, viajes en moto, visitaporelmundo">
+    <meta name="author" content="Wilman R.">
+    <link rel="stylesheet" href="/Pagina-RPM/Style/estilo.css">
+    <link rel="shortcut icon" href="/Pagina-RPM/Iconos/icono.ico" type="image/x-icon">
+    <title>RPM - Rutas Para Moteros</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo" id="tope">
+                <a href="./Index.html"><img src="/Pagina-RPM/Logos/Logo.png" alt="logo" width="50px"></a>
+            </div>
+            
+            <div class="botones_usuario">  
+                <input id="Ingresar" type="button" value="Iniciar Sesion" alt="sesion"> 
+                <input id="Registro" type="button" value="Registrarse" alt="registro">  
+            </div>
+        </nav>
+    </header>
+    <!-- Imagen que ve el usuario despues del nav-->
+    <div class="fondo_contenedor">
+        <img class="fondo_1" src="./Imagenes/Img2_Paisaje.jpg" >
+        <div id="texto_fondo1">
+            <h1 style="font-size: 50px;">
+                Bienvenid@ a RPM
+            </h1>
+            <h3 style="margin-top: -32px;">
+                "La mejor aplicacion para viajes en motos"
+            </h3>
+        </div>
+    </div>
+    <!-- -- - - - - - - - - - - -->
+    <!-- Modal 1 "Sesion"-->
+    <dialog id="mimodal">
+        <form class="formulario">
+            <h2 class="form_titulo">Iniciar Sesion</h2>
+            <p class="form_texto1"> Primera vez? <a class="form_link"> Registrate</a></p>
+
+            <div class="form_contenido">
+                <div class="form_grupo">
+                    <input type="text" id="usuario" class="form_input" placeholder=" " required>
+                    <label for="usuario" class="form_label">Usuario</label>
+                    <span class="form_linea"></span>
+                </div>
+                <div class="form_grupo">
+                    <input type="password" id="contraseña" class="form_input" placeholder=" " required>
+                    <label for="contraseña" class="form_label">Contrasena</label>
+                    <span class="form_linea"></span>
+                </div>
+                <div class="form_botones">
+                    <input type="button" onclick="ingresar()" class="form_ingresar" value="Ingresar">
+                    <input type="button" class="form_cerrar" value="cerrar">
+                </div>
+            </div>
+        </form>
+    </dialog>
+    <!-- --- -- -- --  --  - - - - - - -  -  - ---->
+    <!-- Modal 2 "Registro"-->
+    <dialog id="mimodal2">
+        <form class="formulario2" action="">
+            <h2 class="form_titulo2">Registrarse</h2>
+            <p class="form_texto2"> Ya tienes cuenta? <a class="form_link2"> Iniciar Sesion</a></p>
+
+            <div class="form_contenido2">
+                <div class="form_grupo2">
+                    <input type="text" id="usuario2" class="form_input" placeholder=" " required maxlength="30" minlength="5">
+                    <label for="usuario" class="form_label">Usuario</label>
+                    <span class="form_linea"></span>
+                </div>
+                <div class="form_grupo">
+                    <input type="password" id="contraseña2" class="form_input" placeholder=" " minlenght='3' required >
+                    <label for="contraseña" class="form_label" >Contraseña</label>
+                    <span class="form_linea"></span>
+                </div>
+                <div class="form_grupo">
+                    <input type="password" id="contraseña3" class="form_input" placeholder=" " minlenght='3' required >
+                    <label for="contraseña" class="form_label" >Repetir Contraseña</label>
+                    <span class="form_linea"></span>
+                </div>
+                <div>
+                    <p style="text-align: center;">Tipo de usuario</p>
+                    <select name="rolesrpm" id="listaroles" onchange="opcionrol();">
+                        <option disabled selected>Selecciona un rol</option>
+                        <option value="mv">MotoViajero</option>
+                        <option value="mp">MotoPosada</option>
+                      </select>
+                </div>
+                <div class="form_botones">
+                    <input type="submit" onclick="registro()" class="form_ingresar2" value="Registrarme">
+                    <input type="button" class="form_cerrar2" value="Cerrar">
+                </div>
+            </div>
+        </form>
+    </dialog>
+    <!-- --- -- -- --  --  - - - - - - -  -  - ---->
+    <main>
+        <div class="botones_extras">
+            <div class="B_1">
+                <a href="#info_1">Informacion</a>
+            </div>
+            <div class="B_2">
+                <a href="#info_2">Descargas</a>  
+            </div>
+            <div class="B_3">
+                <a href="#info_3">Patrocinadores</a>
+            </div>
+            <div class="B_4">
+                <a href="#">P.Q.R.S.</a>
+            </div>
+        </div>
+
+        <div class="card_1" id="info_1">
+            <h1 class="titulo_card_1"> Informacion de R.P.M.</h1>
+            <div class="contenido_card1">
+                <div class="texto_card1">
+                    <ul>
+                        <li> <h3><u><b>Que es Rpm?</b></u></h3> </li>
+                        <h4> <i>R.P.M. es una aplicación móvil con soporte web, que facilita e incentiva el moto-turismo mediante la creación de rutas que incluye lugares para visitar, restaurantes, hospedaje, gasolineras, generar un presupuesto aproximado de viaje, tips de mecánica básica y seguimiento al mantenimiento preventivo de la moto y una comunidad de motoviajeros que podrá crear, compartir y calificar rutas, lugares visitados, realizar comentarios, calificar lugares y realizar recomendaciones y consejos de acuerdo a su experiencia, para usuarios con o sin experiencia.</i></h4>
+    
+                        <li> <h3><u><b>Nuestro Objetivo</b></u></h3> </li>
+                        <h4> <i> Es facilitar e incentivar el moto-turismo responsable para motociclistas con y sin experiencia en Colombia.</i></h4>
+                    </ul>
+                </div>
+                <div class="imagen_card1">
+                    <img src="./Imagenes/img4_Yecid.jpg" width="400px" style="border-radius: 10px;">
+                </div>
+            </div>    
+        </div>
+        <div class="card_2" id="info_2">
+            <h1 class="titulo_card_2"> Total de descargas del aplicativo</h1>
+            <div class="numero_descarga">
+            <h1> 1 0 0 . 0 0 0  </h1>
+            </div>
+        </div>
+        <div class="card_3" id="info_3"> 
+            <h1 class="titulo_card_3"> Patrocinadores </h1>
+            <div class="patrocinios">
+                <div class="Patrocinio1">
+                    <img src="./Imagenes/Patrocinios/Akt.png" alt="" width="80px">
+                </div>
+                <div class="Patrocinio2">
+                    <img src="./Imagenes/Patrocinios/autteco.png" alt="" width="80px">
+                </div>
+                <div class="Patrocinio3">
+                    <img src="./Imagenes/Patrocinios/descarga.png" alt="" width="90px">
+                </div>
+                <div class="Patrocinio4">
+                    <img src="./Imagenes/Patrocinios/honda.png" alt="" width="80px">
+                </div>
+                <div class="Patrocinio5">
+                    <img src="./Imagenes/Patrocinios/kawazaki.png" alt="" width="100px">
+                </div>
+                <div class="Patrocinio6">
+                    <img src="./Imagenes/Patrocinios/Yamaha.png" alt="" width="100px">
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="Boton_up">
+        <a href="#tope">
+            <h1> Up </h1>
+        </a>
+    </div>
+    <footer>
+        <h3> 
+            Derechos reservados [2023]
+        </h3>
+    </footer> 
+    <script src="/Pagina-RPM/Programacion/Js/infernus.js"></script>
+</body>
+</html>
