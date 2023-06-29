@@ -83,6 +83,10 @@ boton.addEventListener('click', ()=>{
 if(user.value.includes(" ")){
     alert('No se permiten espacios en blanco')
 }
+
+else if (registrou.value==="" || registrop.value===""){
+    alert('che dale no seas boludo y poné algo al menos la re concha tuya ndea se re enojaba era bait papu tkm <3')
+}
     
 else if (user.value==="adso2556678" && pass.value==="adso2023"){
     alert(`Bienvenido, ${user.value}`)
