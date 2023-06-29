@@ -1,0 +1,265 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bodydark{
+    background-color:#212529 ;
+    color: #212529;
+}
+.logo{
+    position: absolute; 
+    bottom: 5%; 
+    left: 1%;
+}
+
+#cambio{
+    border-style: none;
+    background-color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: -1.5%;
+}
+
+.navbar-rpm{
+    top: 0%;
+    position: relative;
+    position: sticky;
+    width: 100%;
+    height: 130px;
+    background-color: #ffc800;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 1px 1px 5px 0px black;
+    z-index: 1;
+}
+
+.contenedor{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    margin: 20px;
+}
+
+.carta{
+    
+    width: 350px;
+    height: 500px;
+    background-color: #ffffff;
+    margin: 20px;
+    box-shadow: 1px 1px 5px 0px black;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 50px;
+}
+
+.boton1carta{
+    background-color: #ffc800;
+    height: 50px;
+    bottom: 0%;
+    width: 90%;
+    border: 0;
+    font-size: 25px;
+    font-weight: 700;
+    transition: 0.5s;
+    margin-top: 20px;
+    border-radius: 5px;
+    bottom: 0px;
+    box-shadow: 1px 1px 5px 0px black; ;
+}
+
+.boton1carta:hover{
+    width: 100%;
+    height: 55px;
+    transition: 0.5s;
+}
+
+.boton{
+    background-color: #ffffff;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    right: 2%;
+    border-radius: 100px;
+    margin: 5px;
+    bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rutas{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+
+.ruta{
+    width: 450px;
+    height: 300px;
+    box-shadow: 1px 1px 5px 0px black;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 10px;
+}
+.rutas1{
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+
+}
+.ruta1{
+    display: none;
+    width: 450px;
+    height: 300px;
+    box-shadow: 1px 1px 5px 0px black;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.bordes{
+    border-radius: 10px;
+}
+.boton1ruta{
+    background-color: #ffc800;
+    height: 30px;
+    width: 90%;
+    border: 0;
+    font-size: 20px;
+    transition: 0.5s;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 0px black;
+}
+.boton1ruta:hover{
+    width: 100%;
+    transition: 0.5s;
+    height:35px ;
+}
+
+
+.menu{
+    display: none;
+    width: 500px;
+    height: 380px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 5px;
+    z-index: 1;
+    position: absolute;
+    right: 0%;
+    box-shadow: 1px 1px 5px 0px black;
+}
+
+
+.close{
+    background-color: #ffc800;
+    height: 50px;
+    width: 90%;
+    border: 0;
+    font-size: 30px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 0px black;
+    font-weight: 500;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.letramenu{
+    margin-left: 5%;
+    margin-top: 6%;
+    font-size: 25px;
+    font-weight: 500;
+    
+}
+
+.menu-activo{
+    display: none;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.493);
+    position: absolute;
+    width: 100%;
+    height: 180%;
+}
+.tipousuario{
+    font-size: 40px;
+    bottom: 27%;
+    position: absolute;
+    margin-left: 200px;
+}
+.cardmotoposada{
+    width: 350px;
+    height: 500px;
+    background-color: #ffffff;
+    margin: 20px;
+    box-shadow: 1px 1px 5px 0px black;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 50px;
+    display: none;
+}
+.temadelpapu{
+    margin-left: -1.5%;
+}
+
+@media screen and (max-width: 1400px){
+.contenedor{
+    grid-template-columns: auto;
+}
+
+.rutas1{
+    grid-template-columns: auto;
+}
+
+.rutas{
+    grid-template-columns: auto;
+}
+
+.menu{
+    width: 350px;
+    height: 290px;
+}
+
+.close{
+    height: 30px;
+    font-size: 15px;
+}
+
+.ruta{
+    width: 350px;
+}
+.menu-activo{
+    height: 520%;
+}
+
+.tipousuario{
+   display: none;
+}
+
+.ruta1{
+    width: 350px;
+}
+
+.boton{
+    width: 90px;
+    height: 90px;
+    top: 11%;
+    right: 4%;
+}
+
+.logo{
+    width: 100px;
+    top: 11%;
+}
+
+#cambio{
+    font-size: 24px;
+    
+}
+}
+
+
+
+
