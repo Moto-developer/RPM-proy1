@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/53f61e5188.js" crossorigin="anonymous"></script>
+    <title>RPM JS</title>
+</head>
+<body id="body" class="espacioBody">
+    <header id="header">
+        <div class="icon_menu" >
+            <i class="fa-solid fa-bars"  id="btn_open"  ></i>
+
+            
+            
+        </div>
+        
+
+        <div class="links">
+            <a href="#funciones_">Funciones</a>
+            <a href="#">Quines Somos</a>
+            <a href="#">Experiencias</a>
+            <a href="#">Nuestro equipo</a>
+
+            <!-- boton de modalInicio de sesion -->
+            <a href="#" class="btn_inicio">Iniciar Sesión</a>
+            
+        </div>
+
+    </header>
+    <!-- //menu -->
+
+    <div class="menu__side " id="menu_side" >
+
+        <div class="name__page">
+            <img src="assets/img/rpm-logo.png" width="33px">
+            <h4>Roles de RPM</h4>
+        </div>
+
+        <div class="optiones__menu">
+
+            <a href="#"  id="moto__viajero" >
+                <div class="option"  >
+                    <i class="fa-solid fa-user" title="Moto-viajero"></i>
+                    <h4>Moto-viajero</h4>
+                </div>
+            </a>
+
+            <a href="#" id="motoPosada">
+                <div class="option">
+                    <i class="fa-solid fa-house-flag" title="Moto-posada"></i>
+                    <h4>Moto-posada</h4>
+                </div>
+            </a>
+
+
+            <a href="#" id="administrador" >
+                <div class="option">
+                    <i class="fa-solid fa-hammer " title="Administrador"></i>
+                    <h4>Administrador</h4>
+                </div>
+            </a>
+
+            <a href="#" id="cerrarSesion">
+                <div class="option">
+                    <i class="fa-solid fa-right-to-bracket" class="cerrar sesion" title="Cerrar sesion"></i>
+                    <h4>Cerrar Sesión</h4>
+                </div>
+            </a>
+
+
+
+        </div>
+
+    </div>
+
+    <!-- fin menu -->
+
+
+
+
+    <!-- modal iniciarSesion -->
+    <section class="modal ">
+        <div class="modal_container">
+            <form action="#"   class="form">
+                <h2 class="title">Inicio de sesion</h2>
+                <label for="usuario">
+                    <input type="text" id="usu"  placeholder="Nombre de usuario" required>
+
+                </label>
+                
+                <label for="contraseña" >
+                    <input type="password" id="contraseña" placeholder="contraseña" required >
+
+                </label>
+                <a href="#" title=":/">Olvide mi contraseña</a>
+                <br>
+                <a  id="iniciarSesion"  type="submit"  >Iniciar Sesion</a>
+                <br>
+        
+                <button class="registrarse" id="btn_open_registro">Regsitrase</button>
+
+               
+                
+            </form>
+
+
+            <button class="closeModal" >Salir</button>
+            <!-- <a href="#" class="closeModal">salir</a> -->
+        </div>
+        
+        
+
+    </section>
+
+    <!-- fin modal iniciarSesion -->
+
+
+
+    <!-- modal de registro -->
+
+    <section class="modal_registro">
+        <div class="modal_container">
+            <form action="#" class="form">
+                <h2 class="title">Registro usuario</h2>
+                <label for="registroUsuario">
+                    <input type="text" id="registroUsuario"  placeholder="Nombre de usuario" pattern=".{3,10}" >
+
+                </label>
+                
+                <label for="registroContraseña" >
+                    <input type="password" id="registroContraseña" placeholder="contraseña" pattern=".{3,10}" >
+
+                </label>
+                <br>
+                <button  id="btn_registro"  type="submit"  >Registrarse</button>
+                <br>
+  
+            </form>
+            <br>
+
+            <button class="closeModal" id="closeRegistro">Salir</button>
+            
+        </div>
+
+    </section>
+    <!-- fon modal registro -->
+
+
+    <!-- Imagen de fondo -->
+    <section class="uno" id="uno">
+        <br>
+        
+        <h1 class="title">Rutas Para Moteros <span style="color:#ffc800">RPM</span></h1>
+        <br>
+        <h1  class="title2" >Miles de Moto-viajeros por todo el mundo</h1>
+        
+    </section>
+    <!-- Fin Imagen de fondo -->
+
+
+    <!-- funciones -->
+    <section class="dos" id="funciones_">
+        <div class="titleDos">
+            <h1 class="funciones">Nuestras Funciones</h1>
+            <br>
+        <h4>Descubre Nuestros Roles</h4>
+
+        </div>
+        
+        
+        <div class="rutas" >
+            <img src="assets/img/ruta.png" width="100px" alt="">
+            <h2 class="title1">Rutas</h2>
+            <br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, sapiente?</p>
+        </div>
+        
+
+        <div class="moto_viajero">
+            <img src="assets/img/casco-motero.png" width="100px" alt="">
+            <h2 class="titulo2" >Moto-viajero</h2>
+            <br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, sapiente?</p>
+            
+        </div>
+
+        <div class="moto_posada">
+            
+            <img src="assets/img/casa-motoviajero.png" width="100px">
+            <h2 class="title3">Moto-posada</h2>
+            <br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, sapiente?</p>
+            >
+        </div>
+
+
+    </section>
+
+    <!-- fin funciones -->
+
+
+
+    <!-- galeria -->
+    <section class="fun"  id="fun">
+               
+
+        <div class="container">
+            <h1>Galeria</h1>
+
+            
+
+
+
+           <div class="wids">
+
+            <div class="wid1">
+                <h2>Galeria Motos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, dolores unde. Suscipit reiciendis incidunt consequuntur dolore vel commodi atque, accusantium, porro nesciunt fugiat quae quam cumque debitis reprehenderit rem. Perspiciatis?</p>
+
+                <button>DESCARGAR</button>
+
+            </div>
+            <br>
+
+
+            <div class="wid2">
+                <h2>Galeria Moto-posada</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, dolores unde. Suscipit reiciendis incidunt consequuntur dolore vel commodi atque, accusantium, porro nesciunt fugiat quae quam cumque debitis reprehenderit rem. Perspiciatis?</p>
+
+                <button>DESCARGAR</button>
+
+            </div>
+            <br>
+            <div class="wid3">
+                <h2>Galeria Roles</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet nesciunt nam optio! Sunt iure, ratione, nemo quaerat numquam rem dicta minus aliquam nostrum inventore repudiandae veritatis iste beatae recusandae blanditiis!</p>
+                <button>DESCARGAR</button>
+            </div>
+            <br>
+            <div class="wid4">
+                <h2>Galeria de Planificacion de rutas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum provident quibusdam ad exercitationem necessitatibus voluptatem! Fugiat labore quas perferendis quae quisquam? Eligendi numquam officia nesciunt, ducimus repudiandae aspernatur ipsum dolorem!</p>
+
+                <button>Descarga la APP RPM</button>
+
+            </div>
+           </div>
+        </div>
+    </section>
+
+
+    
+
+
+
+
+
+
+
+
+    <script src="assets/js/main.js"></script>
+    
+</body>
+</html>
