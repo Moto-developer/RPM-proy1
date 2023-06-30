@@ -1,0 +1,595 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+
+    
+    
+}
+body{
+    margin-left: 80px;
+    transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    
+}
+
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    top: 0;
+    z-index: 200;
+
+
+}
+
+.icon_menu{
+    
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(10px)
+}
+
+.icon_menu i{
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.menu__side{
+    width: 80px;
+    height: 100%;
+    background-color: #ffc800;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color:white;
+    font-size: 18px;
+    z-index: 300;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-right: 20px solid #ffc800;
+    transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    opacity: 0;
+
+
+}
+/* //ocultra scroll crome */
+
+.menu__side::-webkit-scrollbar{
+    display: none;
+}
+
+.menu__side{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+}
+.name__page{
+    padding: 20px 30px ;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.logo{
+    width: 20px;
+    margin-right: 20px;
+}
+
+.optiones__menu{
+    padding: 20px 30px;
+    position: absolute;
+    top: 80px;
+
+}
+
+.optiones__menu a{
+    color: #ffffffb2;
+    cursor: default;
+    display: block;
+    position: relative;
+    transition: color 300ms;
+}
+
+.optiones__menu a:hover{
+    color: white;
+}
+
+.optiones__menu .option{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+
+}
+
+.optiones__menu .option i{
+    width: 20px;
+    margin-right: 20px;
+}
+
+.optiones__menu .option h4{
+    font-weight: 300;
+    cursor: pointer;
+
+}
+a.selected{
+    color: white;
+}
+
+.selected:before{
+    content: ' ';
+    width: 3px;
+    height: 80%;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: -30px;
+}
+
+/* clases para javaScipt */
+
+.body_move{
+    margin-left: 250px;
+
+
+
+}
+
+.menu_side_move{
+    width: 250px;
+}
+
+
+
+/* -------------------------------- inicio contenido pagina  */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    )
+    ,url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    
+    
+}
+
+.links{
+    display: flex;
+    
+}
+
+.links a{
+    margin: 10px;
+    color: white;
+    padding: 5px 20px;
+    
+    right: 0;
+    
+
+}
+
+.btn_inicio{
+    background-color: #ffc800;
+    border-radius: 10px;
+    padding: 5px 20px;
+    
+
+}
+
+.links a:hover{
+    font-weight: bold;
+    color: #FFC800;
+    transition: color 300ms;
+}
+
+
+
+.uno{
+    
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    )
+    ,url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 850px;
+
+  
+    
+    
+}
+
+.uno{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.uno .title{
+    margin: 50px;
+    font-size: 58px;
+    text-shadow: 0 0 10px white , 0 0 20px white, 0 0 35px white;
+}
+
+.yellow{
+    color: #FFC800;
+    text-shadow: 0 0 10px #FFC800 , 0 0 20px #FFC800, 0 0 35px #FFC800;
+    
+}
+.uno .title2{ 
+    font-weight: bolder;
+    font-size: 55px;
+    margin-top: 20%;
+    text-shadow: 0 0 10px white , 0 0 20px white, 0 0 35px white;
+   
+    
+}
+
+.logo{
+   margin: 50px;
+}
+
+.dos{
+    text-align: center;
+    display: grid;
+    grid-template-areas:"titleDos titleDos titleDos "
+    "rutas moto_viajero moto_posada";
+}
+.titleDos{
+    grid-area: titleDos;
+}
+.rutas{
+    grid-area: rutas;
+}
+
+.moto_viajero{
+    grid-area: moto_viajero;
+}
+.moto_posada{
+    grid-area: moto_posada;
+
+}
+
+
+
+
+.dos div{
+    margin: 50px;
+}
+
+.dos div img{
+    background-color: #ffc800;
+    border-radius: 20%;
+}
+
+/* modal */
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111db;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    
+
+    
+}
+
+.modal_registro{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111db;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    
+
+    
+}
+
+.modal_container{
+        
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    max-height: 70%;
+    border-radius: 6px;
+    padding: 20px;
+    text-align: center;
+    
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+.form label{
+    margin-bottom: 35px;
+}
+
+.form label input{
+    outline: none;
+    border: none;
+    color: black;
+    border-bottom: solid 1px #FFC800;
+    padding: 0 5px;
+    font-size: 18px;
+
+}
+.form .title{
+    font-size: 35px;
+    font-weight:800;
+    margin-bottom: 50px;
+}
+
+.form label input::placeholder{
+    color: rgba(37,37,37,0.5);
+}
+
+.form .btn{
+    margin-bottom: 50px;
+}
+.form .btn:hover{
+    margin-bottom: 50px;
+    font-weight: bold;
+    color: black;
+
+    
+}
+
+
+#iniciarSesion ,#btn_registro {
+    background-color: #FFC800;
+    color: white;
+    font-weight: bolder;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+.registrarse{
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    padding: 3px;
+    
+    text-align: center;
+}
+
+
+
+#iniciarSesion:hover{
+    
+    color: black;
+    
+}
+
+.closeModal{
+    background-color: #FFC800;
+    color: white;
+    width: 20%;
+    border-radius: 10px;
+    border: none;
+}
+.closeModal:hover{
+    color: black;
+}
+
+.fun {
+    background-color: rgb(30,30,30);
+    
+    
+    color: white;
+
+    grid-area: fun;
+}
+
+.fun .container{
+    text-align: center;
+
+    
+    padding: 100px 15px;
+   
+    
+}
+
+.fun h1{
+    margin-top: 0;
+    margin-bottom: 100px;
+    font-size: 50px;
+}
+
+.fun .container p{
+    display: none;
+}
+
+.fun .wids{
+    height: auto;
+}
+
+
+.fun .wid1{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    )
+    ,url(../img/wid1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: none;
+
+    grid-area: wid1;
+
+
+}
+
+.fun .wid2{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    )
+    ,url(../img/wid2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: none;
+
+    grid-area: wid2;
+    
+}
+
+.fun .wid3{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    )
+    ,url(../img/wid3.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: none;
+
+    grid-area: wid3;
+    
+}
+
+.fun .wid4{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    )
+    ,url(../img/wid4.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: none;
+
+    grid-area: wid4;
+    
+}
+
+.wid1, .wid2, .wid3, .wid4{
+    padding: 50px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+button{
+    background-color: #FFC800;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5)k;
+    padding: 10px 30px ;
+    font-size: 1,5em; 
+    border: 1px solid rgba(0,0,0,0.5) ;
+    font-weight: bold;
+    color: white;
+
+    margin-top: 50px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* clase para mostrar ocultar el modal de inicio de sesion */
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+
+
+}
+
+.mostrar{
+    opacity: 1;
+}
+.ocultar{
+    opacity: 0 ;
+}
+.espacioBody{
+    margin-left: 0px;
+}
+
+.funciones{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+@media screen and(max-width: 760px){
+    .body.body_move{
+        margin-left: 0px;
+
+    }
+
+    .menu_side_move{
+        width: 80px;
+        left: -80px;
+    }
+}   .icon_menu{
+    transform: translateX(10px);
+}
