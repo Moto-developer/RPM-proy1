@@ -1,3 +1,5 @@
 Rama de 🇱🇺🇮🇸 => 🇱🇺🇮🇸💎
-(No te subas a mi rama)
+(No  subir a la rama de🇱 🇺🇮🇸💎)
+
+git branch -r (ramas globales)
 
