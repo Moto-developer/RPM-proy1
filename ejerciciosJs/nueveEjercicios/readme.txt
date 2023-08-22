@@ -1,0 +1,3 @@
+ejercicios:
+
+banco, tabla con informacion, apuestas etc...
