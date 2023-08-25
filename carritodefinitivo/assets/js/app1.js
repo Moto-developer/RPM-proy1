@@ -3,7 +3,7 @@ const productos = [{
         precio: 90000,
         nombre: 'Audífonos',
         descripcion: 'Audífonos gamer',
-        img: "/assets/img/headphones.png",
+        img: "/carritodefinitivo/assets/img/headphones.png",
         cantidad: 1
     },
     {
@@ -11,7 +11,7 @@ const productos = [{
         precio: 120000,
         nombre: 'Consola',
         descripcion: 'Consola de videojuegos',
-        img: "/assets/img/Video-Game-Console-2-4G-Double-Wireless-Controller-Game-Stick-4K-10000-Games-64-32GB-Retro.jpg_220x220xz.jpg_.webp",
+        img: "/carritodefinitivo/assets/img/Video-Game-Console-2-4G-Double-Wireless-Controller-Game-Stick-4K-10000-Games-64-32GB-Retro.jpg_220x220xz.jpg_.webp",
         cantidad: 1
     },
     {
@@ -19,7 +19,7 @@ const productos = [{
         precio: 30000,
         nombre: 'Gameboy',
         descripcion: 'Consola Gameboy retro',
-        img: "/assets/img/Retro-Portable-Mini-Handheld-Video-Game-Console-8-Bit-3-0-Inch-Color-LCD-Kids-Color.jpg_220x220xz.jpg_.webp",
+        img: "/carritodefinitivo/assets/img/Retro-Portable-Mini-Handheld-Video-Game-Console-8-Bit-3-0-Inch-Color-LCD-Kids-Color.jpg_220x220xz.jpg_.webp",
         cantidad: 1
     },
 ];
