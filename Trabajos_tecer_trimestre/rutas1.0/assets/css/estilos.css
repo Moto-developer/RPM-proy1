@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+.cabeza {
+    background-color: rgb(236, 92, 92);
+    color: white;
+    padding: 3%;
+    text-align: center;
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 2%;
+    margin: 30px;
+    height: auto;
+}
+
+.filtros {
+    display: grid;
+    grid-template-areas: "label1 label2 label3" "input1  input2 input3";
+}
+
+.filtros2 {
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    height: auto;
+}
+
+.filtros2 {
+    display: grid;
+    grid-template-areas: "label4 label5 label6" "input4  input5 input6";
+}
+
+.input {
+    text-align: center;
+    font-size: medium;
+    width: 300px;
+    height: 40px;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+
+/* ------------------------------ */
+
+.label1 {
+    grid-area: label1;
+    margin-bottom: 10px;
+}
+
+#select1 {
+    grid-area: input1;
+}
+
+.label2 {
+    margin-bottom: 10px;
+    grid-area: label2;
+}
+
+#select2 {
+    grid-area: input2;
+}
+
+.label3 {
+    margin-bottom: 10px;
+    grid-area: label3;
+}
+
+#select3 {
+    grid-area: input3;
+}
+
+.label4 {
+    margin-bottom: 10px;
+    grid-area: label4;
+}
+
+#select4 {
+    grid-area: input4;
+}
+
+.label5 {
+    margin-bottom: 10px;
+    grid-area: label5;
+}
+
+#select5 {
+    grid-area: input5;
+}
+
+.label6 {
+    margin-bottom: 10px;
+    grid-area: label6;
+}
+
+#select6 {
+    grid-area: input6;
+}
+
+main {
+    padding: 2%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 40px;
+    padding: 3%;
+}
+
+.mostrar {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.titulodetalles {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.listadoRutas {
+    display: flex;
+    justify-content: space-between;
+    margin: 1%;
+    width: 900px;
+}
+
+.ulrtas {
+    background-color: rgba(93, 93, 93, 0.628);
+    border-radius: 10px;
+    padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}

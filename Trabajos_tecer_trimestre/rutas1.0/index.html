@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="cabeza">BUSCADOR DE RUTAS</header>
+    <main>
+        <div class="filtros">
+            <!-- ------------------------------------->
+            <label for="select1" class="label1">Nombre de ruta</label>
+            <select name="" id="select1" class="input">
+                <option value="" disabled selected>Selecciona una ruta</option>
+            </select>
+            <!-- ------------------------------------->
+            <label for="select2" class="label2">MinKm</label>
+            <select name="" id="select2" class="input">
+            <option value="" disabled selected>Selecciona un minimo km</option>
+          
+            </select>
+            <!-- ------------------------------------->
+            <label for="select3" class="label3">MaxKm</label>
+            <select name="" id="select3" class="input">
+                <option value="" disabled selected>Selecciona una max km</option>
+          
+           </select>
+
+        </div>
+        <div class="filtros2">
+            <label for="select4" class="label4">Estado</label>
+            <select name="" id="select4" class="input">
+                <option value="" disabled selected>Selecciona el estado de la ruta</option>
+                <option value="Realizada">Realizada</option>
+                <option value="Pendiente">Pendiente</option>
+               </select>
+            <!-- ------------------------------------->
+            <label for="select5" class="label5">Calificacion</label>
+            <select name="" id="select5" class="input">
+                <option value="" disabled selected>Selecciona la calificacion de la ruta</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+             
+               
+               
+               </select>
+            <!-- ------------------------------------->
+            <label for="select6" class="label6">Tipo de via</label>
+            <select name="" id="select6" class="input">
+                <option value="" disabled selected>Selecciona el tipode ruta</option>
+                <option value="Asfalto">Asfalto</option>
+                <option value="Trocha">Trocha</option>
+               </select>
+        </div>
+        <div class="titulodetalles">
+            <h1>Detalles de ruta</h1>
+        </div>
+        <div id="mostrar" class="mostrar">
+
+
+        </div>
+        <button id="reinicio" class="botonr">Reiniciar búsqueda</button>
+
+    </main>
+    <footer>
+        <div class="tituloPie">
+            <h2>Camilo Estevan Tacue Salazar</h2>
+        </div>
+
+        <div class="cuerpoPie"></div>
+
+    </footer>
+    <script src="/assets/js/app.js" type="module"></script>
+</body>
+
+</html>
