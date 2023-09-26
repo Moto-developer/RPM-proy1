@@ -11,4 +11,4 @@ ejericios calificalbles:
 en ejercicios calificables estan los ejercicios de clase
 
 videos:
-en la caroeta videos estan los retos
+en la carpeta videos estan los retos
