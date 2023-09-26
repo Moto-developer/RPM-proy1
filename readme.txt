@@ -6,6 +6,9 @@ git branch -r (ramas globales)
 ...
 
 
-ejerciciosCalificables esta:
-1. carrito de compras
-2. subir imagen con like y contador Local
+
+ejericios calificalbles:
+en ejercicios calificables estan los ejercicios de clase
+
+videos:
+en la caroeta videos estan los retos
