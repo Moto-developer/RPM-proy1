@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagenes/Icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="./estilosWeb/style.css">
+    <title>|RPM| Motoposadas</title>
+</head>
+<body>
+    <header class="cabeza">
+        <div class="Icono">
+            <a href="http://"><img src="./imagenes/Icono.png" alt="" width="60px" ></a>
+        </div>
+        <nav>
+            <a href="">Top</a>
+            <a href="">Calificaciones</a>
+            <a href="">PQRS</a>
+        </nav>
+        <div class="icono_carro">
+            <img id="carrito_compras" src="./imagenes/icono_carro.png" alt="" width="35px">
+        </div>
+    </header>
+    <main>
+        <div class="contenedor_imagen">
+            <p style="font-size: 4rem; color: white;"><b>Bienvenido, Motoviajer@</b></p>
+        </div>
+        <div class="contenedor_texto">
+            <h2>Escoge las mejores motoposadas cerca de tu area</h2>
+        </div>
+        <div class="contenedor_cards" id="Lista_productos">
+            <div class="card1">
+                <div class="contenido_card1">
+                    <img src="./imagenes/casa1.jpg" alt="" width=100% height="300px"">
+                    <div class="texto_card1">
+                        <h4> Casa de las montañas</h4>
+                    </div>
+                    <div class="precio_ubi_card1">
+                        <h4 style="color: white;"> Cali, Colombia</h4><h4 style="color: white;" class="precio_card"> 30000</h4>
+                    </div>
+                    <div class="contenedor_boton_card1">
+                        <input class="agregar" id='boton_1' type="button" value="Reservar" data-id="1">
+                    </div>
+                </div>
+            </div>
+            <div class="card2">
+                <div class="contenido_card2">
+                    <img src="./imagenes/casa2.jpeg" alt="" width=100% height="300px"">
+                    <div class="texto_card2">
+                        <h4> Casa Box</h4>
+                    </div>
+                    <div class="precio_ubi_card2">
+                        <h4 style="color: white;"> Tulua, Colombia </h4> <h4 style="color: white;" class="precio_card"> 15000</h4>
+                    </div>
+                    <div class="contenedor_boton_card2">
+                        <input class="agregar" id='boton_2' type="button" value="Reservar" data-id="2">
+                    </div>
+                </div>
+            </div>
+            <div class="card3">
+                <div class="contenido_card3">
+                    <img src="./imagenes/casa3.jpg" alt="" width=100% height="300px"">
+                    <div class="texto_card3">
+                        <h4> Casa humilde</h4>
+                    </div>
+                    <div class="precio_ubi_card3">
+                        <h4 style="color: white;"> Popayan, Colombia</h4> <h4 style="color: white;" class="precio_card"> 20000</h4>
+                    </div>
+                    <div class="contenedor_boton_card3">
+                        <input class="agregar" id='boton_3' type="button" value="Reservar" data-id="3">
+                    </div>
+                </div>
+            </div>
+            <div class="card4">
+                <div class="contenido_card4">
+                    <img src="./imagenes/casa4.webp" alt="" width=100% height="300px"">
+                    <div class="texto_card4">
+                        <h4> Casa del programador </h4>
+                    </div>
+                    <div class="precio_ubi_card4">
+                        <h4 style="color: white;"> Pasto, Colombia </h4> <h4 style="color: white;" class="precio_card"> 60000</h4>
+                    </div>
+                    <div class="contenedor_boton_card4">
+                        <input class="agregar" id="boton_4"  type="button" value="Reservar" data-id="4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="Icono_yecid">
+        <a href="https://devisitaporelmundo.com"><img src="./imagenes/logo_yecid.png" alt="Logo yecid" width="60px"></a>
+    </div>
+    <div class="ventana_modal">
+        <div class="contenido_modal">
+            <div class="texto_modal">
+                <h1>Reservas</h1>
+            </div>
+            <input class="diseno_boton_x" id="cerrar_modal" type="button" value="x" >  
+        </div>
+        <div class="Informacion_modal">
+            <ul class="Lista_info">
+                <li> Imagen </li>
+                <li> Descripcion </li>
+                <li> Precio </li>
+                <li> Cantidad </li>
+                <li>  &nbsp; &nbsp; &nbsp; </li>
+            </ul>
+        </div>
+        <div class="Lista_carrito" id="listaCarrito">
+            
+        </div>
+       <div class="Cotenedor_Boton_Vaciar_Carrito">
+            <p style="margin-top: 13px;" id="Precio_total"> Total: </p>
+            <input class='Diseno_boton_vaciar_carrito' id="Vaciar" type="button" value="Vaciar Carrito">
+       </div>
+    </div>
+    <footer class="Pie">
+        <h3 class="texto_footer"> Derechos Reservados &copy; </h3>
+    </footer>
+    <script src="./programacion/Backend.js"></script>
+</body>
+</html>

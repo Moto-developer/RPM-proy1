@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#imageContainer {
+    margin-top: 20px;
+}
+
+.image-item {
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.image-item img {
+    max-width: 200px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.like-button {
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.like-button:hover {
+    background-color: #ff4500;
+}

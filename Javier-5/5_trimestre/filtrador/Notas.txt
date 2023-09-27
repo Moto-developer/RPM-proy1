@@ -1,0 +1,1 @@
+Para el carrito se debe aplicar el import y el export.

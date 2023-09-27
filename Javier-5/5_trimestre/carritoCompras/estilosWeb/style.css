@@ -1,0 +1,419 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    border: 0;
+}
+
+/* Diseño del header */
+.cabeza {
+    background-color: #FCBA1E;
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    justify-content: space-between;
+    
+}
+
+header nav a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+header nav a:hover{
+    background-color: rgb(0, 0, 0);
+    height: 22px;
+    transition: 0.1s;
+    color: white;
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.icono_carro {
+    margin-right: 20px;
+    padding-top: 12px;
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icono_carro:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.171);
+
+}
+
+.Icono {
+    width: 50px;
+    margin-left: 10px;
+    text-align: center;
+    margin-bottom: -5px;
+}
+
+/* ---------------------------------- */
+
+/* Diseño de la portada */
+.contenedor_imagen {
+    margin-top: 10px;
+    width: auto;
+    height: 400px;
+    box-shadow: 0px 1px 5px 3px black;
+    background: url(../imagenes/portada_motoposada2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin:border-box;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 10rem;
+}
+
+.Portada_motoposada {
+    width: 100%;
+    height: 400px;
+}
+/* ---------------------------------- */
+
+/* Diseño de texto "debajo de la portada" */
+.contenedor_texto {
+    background-color: #FCBA1E;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+/* ---------------------------------- */
+
+/* Diseño de cards*/
+.contenedor_cards {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.contenedor_cards input {
+    width: 100px;
+    height: 20px;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.contenedor_cards input:hover {
+    background-color: rgb(85, 85, 85);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/* Card 1*/
+.card1 {
+    background-color: rgb(180, 117, 0);
+    width: 100%;
+    height: 375px;
+    border: black;
+    border: 3px;
+    border-style: solid;
+}
+
+.contenido_card1 {
+    display: flex;
+    flex-direction: column;    
+}
+
+.texto_card1 {
+    background-color: #FCBA1E;
+    text-align: center;
+}
+
+.precio_ubi_card1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #825e11;
+    text-align: center;
+}
+
+.contenedor_boton_card1 {
+    margin-top: 10px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+/* ---------------------------------- */
+
+.card2 {
+    background-color: rgb(180, 117, 0);
+    width: 100%;
+    height: 375px;
+    border: black;
+    border: 3px;
+    border-style: solid;
+}
+
+.contenido_card2 {
+    display: flex;
+    flex-direction: column;    
+}
+
+.texto_card2 {
+    background-color: #FCBA1E;
+    text-align: center;
+}
+
+.precio_ubi_card2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #825e11;
+    text-align: center;
+}
+
+.contenedor_boton_card2 {
+    margin-top: 10px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+/* ---------------------------------- */
+.card3 {
+    background-color: rgb(180, 117, 0);
+    width: 100%;
+    height: 375px;
+    border: black;
+    border: 3px;
+    border-style: solid;
+}
+
+.contenido_card3 {
+    display: flex;
+    flex-direction: column;    
+}
+
+.texto_card3 {
+    background-color: #FCBA1E;
+    text-align: center;
+}
+
+.precio_ubi_card3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #825e11;
+    text-align: center;
+}
+
+.contenedor_boton_card3 {
+    margin-top: 10px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+/* ---------------------------------- */
+.card4 {
+    background-color: rgb(180, 117, 0);
+    width: 100%;
+    height: 375px;
+    border: black;
+    border: 3px;
+    border-style: solid;
+}
+
+.contenido_card4 {
+    display: flex;
+    flex-direction: column;    
+}
+
+.texto_card4 {
+    background-color: #FCBA1E;
+    text-align: center;
+}
+
+.precio_ubi_card4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #825e11;
+    text-align: center;
+}
+
+.contenedor_boton_card4 {
+    margin-top: 10px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+/* ---------------------------------- */
+.Icono_yecid {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    padding: 0px 10px 10px 0px;
+}
+
+/* ---------------------------------- */
+
+.ventana_modal{
+    display: none;
+    position: fixed;
+    background-color: rgb(206, 206, 206);
+    z-index: 1;
+    right: 0;
+    top: 0;
+    width: 500px;
+    height: 100%;
+    overflow: auto;
+    box-shadow: -2px 0px 20px 5px black  ;
+}
+.contenido_modal{
+    background-color: rgb(180, 117, 0);
+    display: flex;
+    height: 50px;
+    width: auto;
+
+}
+
+.texto_modal {
+    flex-grow: 1;
+    text-align: center;
+    width: 100%;
+    padding-left: 35px;
+    padding-top: 5px;
+}
+
+.diseno_boton_x {
+    width: 50px;
+    height: 50px;
+    flex-grow: 2;
+    background-color: rgb(243, 10, 10);
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.diseno_boton_x:hover {
+    background-color: #FCBA1E;
+    color: black;
+}
+
+.diseno_boton_x:focus {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.reservas_modal {
+    margin: 12px;
+    width: auto;
+    height: auto;
+}
+
+.Cotenedor_Boton_Vaciar_Carrito {
+    position: sticky;
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+    background-color: white;
+    font-size: 1.2em;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Diseno_boton_vaciar_carrito {
+    width: 120px;
+    height: 40px;
+    background-color: #FCBA1E;
+    color: black;
+    border-radius: 10px;
+    border: 2px black solid;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    margin-top: 4px ;
+
+}
+.Diseno_boton_vaciar_carrito:hover {
+    background-color: #fcb91ec4;
+    border-color: #825e11;
+    color: #3b1616;
+    cursor: pointer;
+}
+
+.Informacion_modal {
+    width: 100%;
+    height: 22px;
+    background-color: #f7f7f7;
+    padding-top: 4px;
+}
+
+.Informacion_modal li:nth-child(4) {
+    padding-right: 40px;
+}
+
+.Lista_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    text-align: center;
+}
+
+/* ---------------------------------- */
+/* ---Acomodar elementos de carrito de compras--------- */
+.Lista_carrito div{
+    display: flex;
+    text-align: center;
+    place-items: center;
+    margin: 10px 0 0 0;
+    flex-direction: row;
+    border: solid black ;
+    background-color: rgba(255, 255, 255, 0.637);
+}
+
+.Lista_carrito p {
+    width: 300px;
+    font-size: 1.2rem;
+}
+
+.Lista_carrito p:last-child span {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.Lista_carrito img {
+    width: 120px;
+}
+
+
+/* ---------------------------------- */
+/* -- -- - -- - - - - */
+/* footer */
+.Pie {
+    background-color: black;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
+.texto_footer {
+    color: white;
+    text-align: center;
+}

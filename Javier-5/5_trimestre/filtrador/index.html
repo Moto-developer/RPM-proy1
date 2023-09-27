@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Hoja_Estilo/estilo.css">
+</head>
+<body>
+    <header class="encabezado">
+        <h1> Filtrador [R.P.M.]</h1>
+    </header>
+    <div class="contenedor_opciones">
+        <div class="contenedor_ruta">
+            <label for="rutas_opcion"> Rutas </label>
+            <select name="rutas" id="rutas_opciones">
+                <option selected disabled>Escoge una opcion </option>
+            </select>
+        </div>
+        <div class="contenedor_minKM">
+            <label for="minKM_opciones"> Minimo Km </label>
+            <select name="minkm" id="minkm_opciones">
+                <option selected disabled>Escoge una opcion </option>
+            </select>
+        </div>
+        <div class="contenedor_maxKM">
+            <label for="maxKM_opciones"> Maximo Km </label>
+            <select name="maxkm" id="maxkm_opciones">
+                <option selected disabled>Escoge una opcion </option>
+            </select>
+        </div>
+        <div class="contenedor_estado">
+            <label for="estado_opciones"> Estado </label>
+            <select name="estado_via" id="estado_opciones">
+                <option selected disabled>Escoge una opcion </option>
+                <option value="Realizado"> Realizado </option>
+                <option value="Pendiente"> Pendiente</option>
+            </select>
+        </div>
+        <div class="contenedor_calificacion">
+            <label for="calificaicon_opciones"> Calificacion </label>
+            <select name="calificaicon" id="calificacion_opciones">
+                <option selected disabled>Escoge una opcion </option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="contenedor_tipovia">
+            <label for="tipovia_opciones"> Tipo de Via </label>
+            <select name="tipovia" id="tipovia_opciones">
+                <option selected disabled>Escoge una opcion </option>
+                <option value="Trocha">Trocha</option>
+                <option value="Asfalto">Asfalto</option>
+            </select>
+        </div>
+    </div>
+    <input type="button" value="Buscar" id="boton_buscar">
+    <h1 style="text-align: center;"> Resultado Busqueda </h1>
+    <div class="contenedor_busquedad">
+    
+    </div>
+    <script type="module" src="./Backend/import.js"></script>
+</body>
+</html>
