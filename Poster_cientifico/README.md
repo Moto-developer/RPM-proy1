@@ -1,3 +1,0 @@
-# poster_cientifico
-
-hola
