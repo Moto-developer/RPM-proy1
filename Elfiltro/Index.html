@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Import</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="titulo">Rutas de flopa</h1>
+    </header>
+
+    <section>
+        <div class="coso">
+            <label for="">Filtrar por nombre</label> <br>
+            <select name="" id="nombreruta">
+                <option value="" selected disabled>Filtrar por nombre</option>
+            </select>
+        </div>
+
+        <div class="coso">
+            <label for="">Filtrar por kmin</label> <br>
+            <select name="" id="kmin">
+                <option value="" selected disabled>Filtrar por kmin</option>
+            </select>
+        </div>
+
+        <div class="coso">
+            <label for="">Filtrar por kmax</label> <br>
+            <select name="" id="kmax">
+                <option value="" selected disabled>Filtrar por kmax</option>
+            </select>
+        </div>
+
+        <div class="coso">
+            <label for="">Filtrar por estado de la ruta</label> <br>
+            <select id="estado">
+                <option>Filtrar por estado de la ruta</option>
+                <option value="Realizada">Realizada</option>
+                <option value="Pendiente">Pendiente</option>
+            </select>
+        </div>
+        
+        <div class="coso">
+            <label for="">Filtrar por calificacion</label> <br>
+            <select id="calificacion">
+                <option>Filtrar por calificacion</option>
+                <option value="1_estrellas">1 estrellas</option>
+                <option value="2_estrellas">2 estrellas</option>
+                <option value="3_estrellas">3 estrellas</option>
+                <option value="4_estrellas">4 estrellas</option>
+                <option value="5_estrellas">5 estrellas</option>
+            </select>
+        </div>
+
+        <div class="coso">
+            <label for="">Filtrar por tipo de la vi</label> <br>
+            <select id="tipovia">
+                <option>Filtrar por tipo de la via</option>
+                <option value="Asfalto">Asfalto</option>
+                <option value="Trocha">Trocha</option>
+            </select>
+        </div>
+
+        <h1>holaflopa</h1>
+
+        <div id="contenedor" class="contenedor">   </div>
+        <button id="borrar" class="borrar">Borrar</button>
+
+    </section>
+
+    <footer class="footer">
+        <p>© 2023 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/nuevo.js" type="module"></script>
+</body>
+</html>
